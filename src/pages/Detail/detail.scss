@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+.detail {
+  display: flex;
+  margin-top: 50px;
+  font-family: "Poppins";
+  &__image {
+    margin-left: 100px;
+    width: 30%;
+    aspect-ratio: 3/4;
+    img {
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+    }
+  }
+  &__info {
+    margin-left: 100px;
+  }
+  &__name {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  &__description {
+    height: 200px;
+  }
+  &__price{
+    color:orange;
+    font-weight: 500;
+    font-size: 30px;
+  }
+  &__buy {
+    display: flex;
+  }
+  &__size-title {
+    margin-left: 5px;
+  }
+  &__size {
+    margin-left: 7px;
+    padding: 5px;
+    background-color: white;
+    border: 1px solid;
+    margin-top: 5px;
+    border-radius: 3px ;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  &__size:hover{
+    background-color: orange;
+    color: white;
+    border: 1px solid black;
+  }
+  &__choose{
+    background-color: orange;
+    color: white;
+    border: 1px solid black;
+  }
+  &__stock {
+    margin-left: 100px;
+  }
+  &__stock-buy {
+    input {
+      margin: 5px 10px;
+      width: 15px;
+      padding: 5px;
+      height: 30px;
+    }
+  }
+  &__button {
+    display: flex; /* Sử dụng Flexbox để sắp xếp nội dung */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    justify-content: center; /* Căn giữa nội dung trong nút (tuỳ chọn) */
+    gap: 8px; /* Tạo khoảng cách giữa biểu tượng và nội dung */
+    font-size: 16px; /* Kích thước chữ */
+    padding: 10px 20px; /* Tùy chỉnh khoảng cách bên trong */
+    background-color: #f5f5f5; /* Màu nền */
+    border: 1px solid #ccc; /* Đường viền */
+    margin-top: 20px;
+    margin-left: 50px;
+    border-radius: 5px;
+    font-size: 18px;
+    color: orange;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    i {
+      font-size: 20px; /* Kích thước biểu tượng */
+    }
+  }
+  &__button:hover {
+    border: none;
+    background-color: orange;
+    color: black;
+  }
+}
+.detail__stock-buy input {
+  color: black; /* Đảm bảo màu chữ hợp lệ */
+  visibility: visible; /* Đảm bảo input không bị ẩn */
+  width: 50px !important;
+  text-align: center;
+  vertical-align: middle;
+}
+.product__same{
+  margin-bottom: 100px;
+  margin-left: 100px;
+  font-size: 30px;
+  color: orange;
+  font-family: "Roboto";
+  margin-top: -100px !important;
+}
+.detail_product{
+  margin-bottom: 200px;
+  .product{
+    margin-left: 100px !important;
+  }
+}
